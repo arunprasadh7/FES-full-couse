@@ -1,0 +1,15 @@
+h1 {
+  color: red;
+}
+
+div {
+  width: 100%;
+  max-width: 200px;
+  /* height: 100vw; */
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  font-size: 14px;
+  font-weight: 600;
+  /* font-style: italic; */
+  font-family: "Roboto", sans-serif;
+}

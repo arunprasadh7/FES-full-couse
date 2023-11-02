@@ -1,0 +1,42 @@
+/* .red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+#title {
+  font-weight: bold;
+  color: purple;
+}
+
+#sub-title {
+  font-style: italic;
+  color: pink;
+} */
+
+section {
+  height: 80vh;
+  border: 1px solid black;
+}
+
+p {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+p.red {
+  color: blue;
+}
+
+.red.title {
+  color: deeppink;
+}
+
+#title {
+  color: orange;
+}
