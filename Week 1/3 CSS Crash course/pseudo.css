@@ -26,7 +26,7 @@ button:hover {
 }
 
 @keyframes float {
-  o% {
+  0% {
     transform: translateY(0);
   }
   100% {
