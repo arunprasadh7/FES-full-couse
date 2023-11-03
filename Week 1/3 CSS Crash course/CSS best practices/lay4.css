@@ -5,19 +5,36 @@
 .container {
   border: 4px solid black;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 24px 24px 0 24px;
+  flex-wrap: wrap;
+  /* height: 100vh; */
 }
 
 .box {
   /* width: 45%; */
   height: 100px;
   border: 2px solid red;
+  margin-bottom: 24px;
+  min-width: 100px;
 }
 
 .wrapperbox {
   width: 45%;
+  flex-wrap: wrap;
 }
 
 .large-box {
   width: 45%;
+  height: auto;
+}
+
+.mini-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mini {
+  width: 30%;
 }
