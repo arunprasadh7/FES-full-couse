@@ -177,3 +177,10 @@ footer {
 .footer__link {
   padding: 0 16px;
 }
+
+/* small phones tablets and large smart phones */
+@media (max-width: 728px) {
+  .row {
+    flex-direction: column;
+  }
+}
