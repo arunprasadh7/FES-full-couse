@@ -9,7 +9,13 @@
     />
     <meta name="robots" content="index,follow" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Library</title>
+    <script src="index.js"></script>
   </head>
   <body>
     <section class="nav" id="landing">
@@ -20,8 +26,21 @@
             <li><a class="nav__link" href="#">Home</a></li>
             <li><a class="nav__link" href="#">Contact</a></li>
             <li><a class="nav__link nav__link--primary" href="#">Books</a></li>
+          </ul>        
+        <button class="btn__menu" onclick="openMenu()">
+          <box-icon name='menu'></box-icon>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class='bx bx-x'></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Home</a></li>
+            <li class="menu__list"><a href="#features" class="menu__link" onclick="closeMenu()">Books</a></li>
+            <li class="menu__list"><a href="" class="menu__link no-cursor" onclick="closeMenu()">Contacts</a></li>
           </ul>
         </div>
+      </div>
       </nav>
       <header>
         <div class="header__container">
@@ -31,16 +50,365 @@
               Find your dream book with the
               <span class="purple--text">Library</span>
             </h2>
+            <a href="#features">
             <button class="btn">Browse books</button>
+          </a>
           </div>
-          <figure class="landing-page__img">
-            <img
-              src="./assets/Undraw_Books.svg"
-              alt="library landing page image"
-            />
-          </figure>
+          <div class="header__image--wrapper">
+            <figure class="landing-page__img">
+              <img
+                src="./assets/Undraw_Books.svg"
+                alt="library landing page image"
+              />
+            </figure>
+          </div>
         </div>
       </header>
     </section>
+    <main>
+      <!-- HIGHLIGHTS SECTION  -->
+      <section id="hightlights" class="highlights">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">
+              Why choose <span class="purple--text">Library?</span>
+            </h2>
+            <div class="highlight__wrapper">
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="bx bxs-bolt"></i>
+                </div>
+                <h3 class="highlight__subtitle">Easy and Quick</h3>
+                <p class="highlight__para">
+                  Get access to the book you pruchased instantly
+                </p>
+              </div>
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="bx bxs-book-reader"></i>
+                </div>
+                <h3 class="highlight__subtitle">10,000+ Books</h3>
+                <p class="highlight__para">
+                  Latest releases from all your favourite categories
+                </p>
+              </div>
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="bx bxs-purchase-tag"></i>
+                </div>
+                <h3 class="highlight__subtitle">Affordable</h3>
+                <p class="highlight__para">
+                  Get access to your favourite books for as low as &#x20B9;49
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features Section  -->
+      <section id="features">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">
+              Featured <span class="purple--text">Books</span>
+            </h2>
+            <div class="books">
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./assets/crack the coding interview.png"
+                    alt="book image"
+                  />
+                </figure>
+                <div class="book__title">Cracking the Coding Interview</div>
+                <div class="book__ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">&#x20B9;499</span
+                  >&#x20B9;350
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./assets/atomic habits.jpg"
+                    alt="book image"
+                  />
+                </figure>
+                <div class="book__title">Atomic Habits</div>
+                <div class="book__ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">&#x20B9;850</span
+                  >&#x20B9;549
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./assets/david goggins.jpeg"
+                    alt="book image"
+                  />
+                </figure>
+                <div class="book__title">Can't Hurt Me</div>
+                <div class="book__ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">&#x20B9;1200</span
+                  >&#x20B9;450
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./assets/deep work.jpeg"
+                    alt="book image"
+                  />
+                </figure>
+                <div class="book__title">Deep Work</div>
+                <div class="book__ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">&#x20B9;499</span
+                  >&#x20B9;350
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RECENT SECTION  -->
+      <section id="recent">
+        <div class="container">
+          <div class="row">
+            <div class="recent__title">
+              <h2>Recent <span class="purple--text">Books</span></h2>
+            </div>
+            <div class="books recent__books">
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./assets/book-1.jpeg"
+                    alt="book image"
+                  />
+                </figure>
+                <div class="book__title">The 10X Rule</div>
+                <div class="book__ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">&#x20B9;800</span
+                  >&#x20B9;400
+                </div>
+            </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./assets/book-2.jpeg"
+                    alt="book image"
+                  />
+                </figure>
+                <div class="book__title">Be Obsessed Or Be Average</div>
+                <div class="book__ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">&#x20B9;600</span
+                  >&#x20B9;399
+                </div>
+            </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./assets/book-3.jpeg"
+                    alt="book image"
+                  />
+                </figure>
+                <div class="book__title">Rich Dad Poor Dad</div>
+                <div class="book__ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">&#x20B9;1300</span
+                  >&#x20B9;699
+                </div>
+            </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./assets/book-4.jpeg"
+                    alt="book image"
+                  />
+                </figure>
+                <div class="book__title">Cashflow Quadrant</div>
+                <div class="book__ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">&#x20B9;750</span
+                  >&#x20B9;549
+                </div>
+            </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./assets/book-5.jpeg"
+                    alt="book image"
+                  />
+                </figure>
+                <div class="book__title">48 Laws of Power</div>
+                <div class="book__ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">&#x20B9;650</span
+                  >&#x20B9;550
+                </div>
+            </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./assets/book-6.jpeg"
+                    alt="book image"
+                  />
+                </figure>
+                <div class="book__title">The 5 Second Rule</div>
+                <div class="book__ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">&#x20B9;999</span
+                  >&#x20B9;649
+                </div>
+            </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./assets/book-7.jpg"
+                    alt="book image"
+                  />
+                </figure>
+                <div class="book__title">Your Next Five Moves</div>
+                <div class="book__ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">&#x20B9;499</span
+                  >&#x20B9;350
+                </div>
+            </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    class="book__img"
+                    src="./assets/book-8.jpeg"
+                    alt="book image"
+                  />
+                </figure>
+                <div class="book__title">Mastery</div>
+                <div class="book__ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">&#x20B9;750</span
+                  >&#x20B9;335
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="explore" class="explore__book">
+        <div class="container">
+          <div class="row explore__row">
+            <h2>Explore more <span class="purple--text">Books</span></h2>
+            <a href="#features">
+            <button class="btn">Browse Books</button>
+          </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <a href="#">
+          <figure class="footer__logo">
+            <img class="footer__logo--img" src="./assets/Library.svg" alt="">
+          </figure>
+        </a>
+        <div class="footer__list">
+          <a href="#" class="footer__link footer__link--working">Home</a>
+          <a href="#" class="footer__link footer__link--working">About</a>
+          <a href="#" class="footer__link footer__link--working">Books</a>
+          <a href="#" class="footer__link no-cursor">Contact</a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2023 Library</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
