@@ -1,0 +1,142 @@
+JS Crash course 
+
+Data types - used to organise Data
+
+1. String - texts enclosed within quotes 
+  a =  'Arun', 
+  a.length - returns length of string
+  index and slicing - a[0] returns A
+
+
+2. Number - both int and float
+let a = 5
+let b = 10.5
+
+typeof - returns the data type
+
+3. Boolean - returns true or false
+
+4. Null - means the value is set nothing on purpose
+
+5. Undefined - means the value was never set in the first place/ ie it never existed
+
+NaN - Not a Number - usually means an error occured while compiling the program
+
+/ - single line comment in JS 
+/** - multiline comment
+
+
+VARIABLES - used to store data
+
+  ways to declare variable
+  1. var - outdated and not used often
+           used to store variable values that will change later
+
+           var a = 10
+           a = 20
+
+  2. let -  replacement for var 
+            used to store variable value that will change or can be modified later
+            let a = 10
+            a = 20
+
+  3. const - used to store constants
+             the value declared to the const variable cannot be changed later and will remain the same till the program completes
+             const a = 10
+
+Naming convention - Camel case is followed while naming VARIABLES
+                    let fullName = 'Arun Prasadh'
+
+
+let isRaining = true
+let temperature = 20
+let planet = 'Earth'
+
+temperature = 22
+
+
+ Comparison Operators
+
+ > , >=, <, <=, !=
+
+ EQUALITY  '==' VS '==='
+ == - checks values
+ === - checks type and value
+
+
+CONDITIONALS 
+ if (condition === true){
+  execute this
+ }
+
+ else{
+  execute this
+ }
+
+
+LOGICAL Operators - and, or, not
+
+and - &&
+or - ||
+not 
+
+TRUTHY, FALSY VALUES
+
+falsy values
+- Undefined
+- Null
+- NaN
+- 0
+- ''
+- false
+
+TERNARY Operators - shortcut for an if else condition
+mostly used if the line of code is just one line
+
+
+// - - - - -- - - - - - - - - - - - - - - - - - - - 
+
+LOOPS - used for repeating the same code over and over again
+
+Types of loops in JS
+
+  1. for loops
+  2. while loop
+  3. do while loop
+
+
+while loop
+
+  while (condition) {
+    statement...
+  }
+
+// - - - - -- - - - - - - - - - - - - - - - - - - - 
+
+
+FUNCTIONS - is a block of code designed to perform a particular task 
+
+syntax:
+function funName (parameter) {
+  statement ...
+  return statement
+}
+
+arrow function - another way of writing function
+
+syntax:
+const funName = (parameter) => {
+  statement ...
+  return statement
+}
+
+// - - - - -- - - - - - - - - - - - - - - - - - - - 
+
+ARRAYS - data structure that can hold multiple data values in one variable
+
+let arr = [10,20,30,40,50, 'arun', true]
+
+push - add elements to the array 
+  arr.push(value)
+
+  arr.filter()
