@@ -140,3 +140,18 @@ push - add elements to the array
   arr.push(value)
 
   arr.filter()
+
+// -----------------------------------------------------
+
+OBJECTS - used to store multiple properties in one variable - similar to dict in python 
+
+// -----------------------------------------------------
+
+DOM - Document Object Model
+Dom allows us to access and change the styling and contents of elements on website
+2 ways to access dom 
+  - query selector
+  - getElementById
+
+the script tag must be placed at the end of the body so all the html elements load before js 
+or if the js is placed in header then it must be concluded with 'defer' tag

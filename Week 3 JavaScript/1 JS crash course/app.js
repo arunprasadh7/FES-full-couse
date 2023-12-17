@@ -226,3 +226,99 @@ let newArrayMap = arrMap.map(element => 'Lion')
 
 console.log(newArrayMap)
 
+// - - - - -- - - - - - - - - - - - - - - - - - - - 
+
+// OBJECTS 
+
+let user = {
+  userName : 'Arun',
+  email : 'arun96@gmail.com',
+  subscription : 'VIP',
+  discordId : 'ArunRay#007'
+}
+
+console.log(user.userName)
+console.log(user.subscription)
+
+let users = [
+  {
+    userName : 'Arun',
+    email : 'arun96@gmail.com',
+    password : 'arun123',
+    subscription : 'VIP',
+    discordId : 'ArunRay#007'
+  },
+  {
+    userName : 'Prasadh',
+    email : 'prasadh@gmail.com',
+    password : 'prasadh123',
+    subscription : 'VIP',
+    discordId : 'ArunRay#007'
+  },
+  {
+    userName : 'Storm',
+    email : 'storm@gmail.com',
+    password : 'storm123',
+    subscription : 'VIP',
+    discordId : 'ArunRay#007'
+  }
+]
+
+console.log(users[0])
+console.log(users[0].userName)
+console.log(users[0].subscription)
+console.log(users[1].userName)
+console.log(users[1].subscription)
+
+// creating a login function 
+
+// function definition
+function login(email, password) {
+  
+  for (let i = 0; i < users.length; i += 1) {
+    if (users[i].email === email) {
+      console.log(users[i])
+      if (users[i].password === password) {
+        console.log('Login successfull!!')
+      }
+      else {
+        console.log('Login Failed. \nCheck email and password and try again.')
+      }
+      return
+    }
+    
+  }
+  console.log('No email ID found.')
+}
+
+// function call
+login('arun6@gmail.com', 'arun123')
+
+// -----------------------------------------------------
+// DOM
+
+// first way of accessing an element
+console.log(document.querySelector('#title'))
+
+// second way 
+console.log(document.getElementById('title'))
+
+// Changing HTML
+document.querySelector('.aim').innerHTML = 'IAS'
+document.querySelector('.aim').innerHTML += ' Ministry of External Affairs'
+
+// Changing CSS 
+// document.querySelector('.aim').style.color = 'red'
+document.querySelector('.aim').style.fontSize = '30px'
+
+// Onclick property for button 
+
+function changeColorToRed() {
+  document.querySelector('.aim').style.color = 'red'
+  console.log('Clicked')
+}
+
+// dark mode button
+function toggleDarkMode() {
+  document.querySelector('body').classList.toggle('dark-theme')
+}

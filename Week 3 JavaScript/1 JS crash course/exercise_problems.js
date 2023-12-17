@@ -103,3 +103,33 @@ console.log(cents1)
 let dollar2 = [0, 10, 20]
 let cents2 = dollar2.map(dollar => dollar * 100)
 console.log(cents2)
+
+// - - - - -- - - - - - - - - - - - - - - - - - - - 
+
+// Objects 
+
+// Create a register function accepting some parameters 
+// Inside regsiter function create 'user' object & push user object into 'users' array
+
+// function definition
+let users = []
+function register(username, email, password, substatus, discordId, lessonsCompleted) {
+  
+  let user = {
+    username : username,
+    email : email,
+    password : password,
+    substatus : substatus,
+    discordId : discordId,
+    lessonsCompleted : lessonsCompleted
+  }
+
+  users.push(user)
+  return users
+
+}
+
+// function call 
+register('arun', 'arun@gmail.com', 'arun123', 'VIP', 'arun007', 10)
+
+console.log(users)
