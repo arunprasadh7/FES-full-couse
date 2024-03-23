@@ -1,14 +1,19 @@
 import "./App.css";
+import Title from "./Components/Title.jsx";
+import Todo from "./Components/Todo.jsx";
+import Modal from "./Components/modal.jsx";
 
 function App() {
   return (
-    <div className="">
-      <h1>My TODO List</h1>
-      <div className="">
-        <h2>Finished Frontend Simplified</h2>
-        <button>Delete</button>
+    <>
+      <Title />
+      <div className="todo__wrapper">
+        <Todo />
+        <Todo />
+        <Todo />
       </div>
-    </div>
+      <Modal />
+    </>
   );
 }
 

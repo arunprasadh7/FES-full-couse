@@ -1,0 +1,23 @@
+.todo__container {
+  max-width: calc(100 / 3);
+  padding: 16px;
+  margin: 8px;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo__button {
+  padding: 8px 16px;
+  margin: 16px auto 8px auto;
+  border-radius: 5px;
+  background-color: rgb(150, 140, 140);
+  transition: all 0.15s linear;
+}
+
+.todo__button:hover {
+  font-weight: bold;
+  font-size: 16px;
+  background-color: rgb(202, 83, 83);
+  color: black;
+}
