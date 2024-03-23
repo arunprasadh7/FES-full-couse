@@ -13,6 +13,7 @@
   border-radius: 5px;
   background-color: rgb(150, 140, 140);
   transition: all 0.15s linear;
+  cursor: pointer;
 }
 
 .todo__button:hover {
@@ -20,4 +21,8 @@
   font-size: 16px;
   background-color: rgb(202, 83, 83);
   color: black;
+}
+
+.todo__para {
+  text-align: center;
 }
